@@ -40,7 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #Apps
-    'home'
+    'accounts',
+    'category',
+    'home',
+    
+    
 ]
 
 MIDDLEWARE = [
@@ -120,8 +124,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = BASE_DIR / "static"
-STATICFILES_DIRS = []
+STATIC_ROOT = [BASE_DIR / "static"]
+STATICFILES_DIRS = [] 
 print(STATIC_ROOT)
 print("BASE:", BASE_DIR)
 
