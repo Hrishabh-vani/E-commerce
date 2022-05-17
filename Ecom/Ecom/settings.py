@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'accounts',
     'category',
     'home',
+    'store',
     
     #Third Party Packages
     'django_extensions',
