@@ -10,7 +10,7 @@ class Category(models.Model):
     description= models.CharField(max_length=250, blank=True)
     image = models.ImageField(upload_to='image/categories', blank=True)
 
-    class mete:
+    class meta:
         db_table = "category"
         verbose_name = "Category"
         verbose_name_plural = "Categories"
